@@ -1,0 +1,23 @@
+{
+  "name": "cuckoo-cycle",
+  "version": "0.1.0",
+  "description": "A javascript 32bit implementation of Cuckoo Cycle",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Metric/cuckoo-cycle.git"
+  },
+  "keywords": [
+    "proof-of-work",
+    "pow"
+  ],
+  "author": "Metric",
+  "license": "FAIR MINING or GPL v2+",
+  "bugs": {
+    "url": "https://github.com/Metric/cuckoo-cycle/issues"
+  },
+  "homepage": "https://github.com/Metric/cuckoo-cycle#readme"
+}
