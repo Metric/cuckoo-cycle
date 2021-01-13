@@ -1,8 +1,8 @@
 Cuckoo Cycle JS
 =======================
-This is a 32bit javascript version of [Cuckoo Cycle](https://github.com/tromp/cuckoo).
+This is a 32bit and 64bit javascript version of [Cuckoo Cycle](https://github.com/tromp/cuckoo).
 
-Do note that this is not compatible with the original 64bit Cuckoo Cycle implementation.
+Do note that the 32bit version is not compatible with the 64bit version
 
 This is due to the following:
 
@@ -17,6 +17,20 @@ First install via npm
 ```
 npm install cuckoo-cycle --save
 ```
+
+Cuckoo 64bit JS Version
+=============
+Thanks to the underlying js engines now using 64bit Doubles for all numbers and implementing Float64Array(); it is now possible to use the original uint 64bit version.
+
+To access the 64bit version of the below API just add a 64 to the end of the name like so:
+
+```
+const {Cuckoo64} = require('cuckoo-cycle');
+const {Miner64} = require('cuckoo-cycle');
+const {Solver64} = require('cuckoo-cycle');
+```
+
+All the below API access still applies just the same, except the miner will now return a Float64Array for the solution.
 
 Cuckoo Verifier API
 ===========
